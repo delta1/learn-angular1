@@ -3,7 +3,7 @@
 - [learn-angular.org](http://learn-angular.org) **NB!** go through this tutorial
 
 ## About Angular 1
-- JavaScript framework for developing Single Page Applications (SPAs)
+- Angular is a JavaScript framework for developing Single Page Applications (SPAs)
 - [Angular 1 website](https://angularjs.org)
 - [Angular 1 API documentation](https://docs.angularjs.org/api)
 
