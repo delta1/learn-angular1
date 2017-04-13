@@ -8,4 +8,4 @@
 - JavaScript framework for developing Single Page Applications (SPAs)
 
 ## Anatomy of Basic Angular 1 App
-
+![anatomy.png](img/anatomy.png)
