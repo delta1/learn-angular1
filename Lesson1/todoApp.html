@@ -1,12 +1,25 @@
 <!doctype html>
-<html ng-app="">
+<html ng-app="todoApp">
   <head>
-    <title></title>
+    <title>Todo App</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+  <style>
+    .done { text-decoration: line-through }
+  </style>
   </head>
   <body>
 
-    <div ng-controller="">
+    <div ng-controller="todoController">
+      <h1>Todo App</h1>
+      <p>Add a new todo</p>
+      <form ng-submit="addTodo()">
+        <input type="text" placeholder="add todo" ng-model="newTodo" />
+        <input type="submit" value="Add" />
+      </form>
+      <ul ng-repeat="todo in todos">
+        <li><span ng-class="{ done: todo.done }">{{todo.text}}</span> <input type="checkbox" ng-model="todo.done"></li>
+      </ul>
+      <button ng-if="todos.length > 0" ng-click="clearDone()">Clear done</button>
     </div>
 
     <script src="todo.js"></script>
