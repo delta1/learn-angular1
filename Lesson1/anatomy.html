@@ -1,0 +1,27 @@
+<!doctype html>
+<html ng-app="appName">
+  <head>
+    <title>Angular 1 App anatomy</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+  </head>
+  <body>
+
+    <div ng-controller="controllerName">
+      <p>Expression: {{ 1 + 2 }}</p>
+      <p>Controller Scope variable: {{ message }}</p>
+    </div>
+
+    <script>
+      // define the Angular app  
+      // global variable "angular" is available after including angular script file
+      var app = angular.module('appName', []);
+
+      // add a controller to our angular app
+      app.controller('controllerName', ["$scope", function ($scope) {
+        $scope.message = "Hello World!";
+      }]);
+    </script>
+
+  </body>
+</html>
+
