@@ -14,6 +14,9 @@ eg: ```<img src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pag
 
 <img src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png" width="150">
 
+- **Important tags to know**: html, head, title, link, script, body, a, div, h1 - h6, p, strong, em, img *and many more!*
+- Take a look at this page and its source https://cbracco.github.io/html5-test-page/
+
 
 ## CSS
 -
