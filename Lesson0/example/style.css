@@ -1,0 +1,8 @@
+/* make all links (a tags) green, and their background a shade of grey */
+a {
+  color: blue;
+  background-color: #cccccc;
+}
+.green {
+  color: green;
+}
