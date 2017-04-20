@@ -37,7 +37,7 @@ will show this image
 - **Important tags to know**: html, head, title, link, script, body, a, div, h1 - h6, p, strong, em, img *and many more!*
 - Take a look at this page and its source https://cbracco.github.io/html5-test-page/
 - Use the developer tools element inspector to view and understand the HTML 
-- Go through Learn to COde HTML & CSS ! - http://learn.shayhowe.com/html-css/ 
+- Go through Learn to Code HTML & CSS - http://learn.shayhowe.com/html-css/ 
 
 ## CSS
 - CSS is **C**ascading **S**tyle**S**heets which are used to *style* our HTML content. HTML defines *what* the content is, CSS defines *how it should look* 
@@ -62,6 +62,105 @@ will show this image
 - Concept of CSS *normalize* to create a decent standard across different browsers... http://nicolasgallagher.com/about-normalize-css/ 
 
 ## JavaScript
-- 
+- JavaScript (JS) is the programming language available within webpages to provide interactive capability
+- JS can be used on a webpage between ```<script></script>``` tags or included as a file in with ```<script src="filename.js"></script>```
+- eg: between script tags 
+```html
+<script>
+  alert('Hello World!');
+</script>
+```
+- eg: in JS file
+
+HTML file
+```html
+<script src="filename.js"></script>
+```
+
+filename.js
+```js
+alert('Hello World!');
+```
+
+- First steps [What is JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript) on MDN 
+
+### JavaScript syntax and data types
+
+- Single line comments start with ```//``` 
+- Multiline comments start with ```/*``` and end with ```*/```
+```js
+// this is a single line comment
+
+/*
+This is a
+multi
+line
+comment
+*/
+```
+
+- Lines normally end with a semi-colon
+- ```alert``` is a browser window function that pops up a message box 
+- Strings are surround by single or double quotes 
+```js
+alert('I am a string');
+alert("I am also a string");
+```
+
+- We can perform arithmetic on Numbers
+```js
+6 + 3
+// 9
+
+6 - 3
+// 3
+
+6 * 3
+// 18
+
+6 / 3
+// 2
+```
+
+- Use the ```var``` keyword to define a variable 
+```js
+var test;
+// test is undefined, but is available as a variable
+
+var temp = "Hello World";
+// the variable temp set to the string Hello World
+
+temp = 42
+// the variable temp is now set to the number 42
+```
+
+- A Boolean variable can either be true or false 
+```js
+var myVar = true;
+// myVar is now true
+
+myVar = false;
+// myVar is now false
+```
+
+- code blocks can be surrounded by curly braces ```{``` and ```}```
+- ```if``` statements evaluate a boolean expression and execeute the first code block if true, or the else code block if false
+
+```js
+if (true) {
+  alert('true block will be executed because true is always true');
+}
+else {
+  alert('else block will not be executed');
+}
+
+if (5 < 3) {
+  alert('this block will not execute because 5 is not less than 3');
+}
+else {
+  alert('this else block will be executed because 5 is not less than 3');
+}
+```
+
 
 
