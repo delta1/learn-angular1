@@ -191,6 +191,8 @@ temp.length
 // 5
 ```
 
+- ```console.log``` lets us write messages to the console if it exists
+
 - Objects are used to store many *keys* and their corresponding *values*. Objects use curly brackets. Each value in an object has a *key*. Object keys are strings, object values can be of any type. 
 
 ```js
@@ -226,7 +228,7 @@ Object {
 
 ```
 
-- ```console.log``` lets us write messages to the console if it exists
+
 - ```for``` loops allow us to create a code loop. We define a loop variable and its start and end conditions, and increment count
 
 ```js
@@ -248,6 +250,11 @@ for (var i = 0; i < 10; i += 2) {
 // 4
 // 6
 // 8
+
+// let's use a for loop to loop through an array and log the values 
+
+
+
 ```
 
 
