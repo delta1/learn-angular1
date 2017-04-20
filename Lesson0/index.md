@@ -84,6 +84,8 @@ alert('Hello World!');
 
 - First steps [What is JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript) on MDN 
 
+- Go through JavaScript tutorial at https://www.javascript.com/try 
+
 ### JavaScript syntax and data types
 
 - Single line comments start with ```//``` 
@@ -130,7 +132,7 @@ var test;
 var temp = "Hello World";
 // the variable temp set to the string Hello World
 
-temp = 42
+temp = 42;
 // the variable temp is now set to the number 42
 ```
 
@@ -144,23 +146,73 @@ myVar = false;
 ```
 
 - code blocks can be surrounded by curly braces ```{``` and ```}```
-- ```if``` statements evaluate a boolean expression and execeute the first code block if true, or the else code block if false
+- ```if``` statements evaluate a boolean expression 
+- if the expression evalutes to true, the **then** code block is executed
+- if the expression evalutes to false, the **else** code block is executed
 
 ```js
 if (true) {
-  alert('true block will be executed because true is always true');
+  alert('then block will be executed because true is always true');
 }
 else {
   alert('else block will not be executed');
 }
 
 if (5 < 3) {
-  alert('this block will not execute because 5 is not less than 3');
+  alert('then block will not execute because 5 is not less than 3');
 }
 else {
   alert('this else block will be executed because 5 is not less than 3');
 }
 ```
 
+- Arrays are used to store many *values*, of any type. Arrays use square brackets. Each value in an array has an *index*. The first index is 0 (not 1) 
+
+```js
+// define an empty array
+var empty = [];
+
+// define an array with items
+var temp = [1, 2, '3', "four", true];
+
+// refer to an item in the array by its index
+
+temp[0]
+// 1
+
+temp[2]
+// '3'
+
+temp[4]
+// true
+
+// arrays have useful methods
+temp.length
+// 5
+```
+
+- ```console.log``` lets us write messages to the console if it exists
+- ```for``` loops allow us to create a code loop. We define a loop variable and it's start and end conditions and increment count
+
+```js
+// set the loop variable to 1, run the loop until the loop variable is 5, increment by 1 each loop
+for (var i = 1; i < 5; i++) {
+  console.log(i);
+}
+// 1
+// 2 
+// 3
+// 4
+
+// set the loop variable to 0, run the loop until the loop variable is 10, increment by 2 each loop
+for (var i = 0; i < 10; i += 2) {
+  console.log(i);
+}
+// 0
+// 2 
+// 4
+// 6
+// 8
+```
 
 
