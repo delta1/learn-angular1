@@ -191,8 +191,43 @@ temp.length
 // 5
 ```
 
+- Objects are used to store many *keys* and their corresponding *values*. Objects use curly brackets. Each value in an object has a *key*. Object keys are strings, object values can be of any type. 
+
+```js
+// define an empty object
+var obj = {};
+
+// create a new item in the object
+obj['one'] = "a string value";
+
+// use the other syntax to create another item
+obj.two = 42;
+
+// log the object
+console.log(obj);
+/*
+Object {
+  one: "a string value"
+  two: 42
+}
+*/
+
+// delete an element from the object
+delete obj.one;
+
+// log the object again
+console.log(obj);
+/*
+Object {
+  two: 42
+}
+*/
+
+
+```
+
 - ```console.log``` lets us write messages to the console if it exists
-- ```for``` loops allow us to create a code loop. We define a loop variable and it's start and end conditions and increment count
+- ```for``` loops allow us to create a code loop. We define a loop variable and its start and end conditions, and increment count
 
 ```js
 // set the loop variable to 1, run the loop until the loop variable is 5, increment by 1 each loop
