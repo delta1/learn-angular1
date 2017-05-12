@@ -266,4 +266,41 @@ for (var i = 0; i < a.length; i++) {
 
 ```
 
+- See also ```while``` loops [at MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while) 
+
+- Functions are user defined methods that can take parameters and return anything 
+```JS
+// define a function that logs 'hello' to the console, takes no parameters and does not return anything (returns undefined)
+function hi() {
+  console.log('hello');
+}
+
+// now "evaluate" the function by calling it with brackets 
+hi();
+// hello
+
+// define a function that takes one parameters, a number, and returns the square of that number 
+function square(num) {
+  return num*num;
+}
+
+// now evalute the function for a few numbers
+square(2);
+// 4
+square(6);
+// 36 
+
+// what would happen if we called the function with something that is not a number?! 
+square('test');
+// NaN 
+
+// The function returns NaN which means Not a Number 
+
+// and what if we call it without the parameter?
+
+square();
+// NaN 
+
+```
+
 
