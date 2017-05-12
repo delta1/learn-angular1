@@ -167,6 +167,7 @@ else {
 ```
 
 - Arrays are used to store many *values*, of any type. Arrays use square brackets. Each value in an array has an *index*. The first index is 0 (not 1) 
+- [Reference to Array methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Methods)
 
 ```js
 // define an empty array
@@ -194,6 +195,8 @@ temp.length
 - ```console.log``` lets us write messages to the console if it exists
 
 - Objects are used to store many *keys* and their corresponding *values*. Objects use curly brackets. Each value in an object has a *key*. Object keys are strings, object values can be of any type. 
+
+- [Reference to Object methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object#Methods_of_the_Object_constructor)
 
 ```js
 // define an empty object
@@ -256,7 +259,6 @@ var a = [1, "two", 3];
 for (var i = 0; i < a.length; i++) {
   console.log(a[i]);
 }
-
 // 1
 // two
 // 3
