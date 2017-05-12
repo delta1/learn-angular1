@@ -252,7 +252,14 @@ for (var i = 0; i < 10; i += 2) {
 // 8
 
 // let's use a for loop to loop through an array and log the values 
+var a = [1, "two", 3];
+for (var i = 0; i < a.length; i++) {
+  console.log(a[i]);
+}
 
+// 1
+// two
+// 3
 
 
 ```
