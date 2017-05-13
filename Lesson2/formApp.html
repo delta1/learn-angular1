@@ -1,0 +1,36 @@
+<!doctype html>
+<html ng-app="formApp">
+  <head>
+    <title>Form App</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="formApp.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  </head>
+  <body>
+
+    <div ng-controller="formController" class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <h1>Form App</h1>
+          <form name="theForm" ng-submit="save(theForm)" class="form" novalidate>
+            <div class="form-group">
+              <input type="text" name="name" required placeholder="Name" ng-model="entry.name" class="form-control" />
+              <p ng-show="(theForm.name.$invalid && !theForm.name.$pristine) || (theForm.$submitted && theForm.name.$pristine)" class="required">Name is required!</p>
+            </div>
+            <div class="form-group">
+              <input type="email" required placeholder="Email Address" ng-model="entry.email" class="form-control" />
+            </div>
+            <div class="form-group">
+              <input type="submit" value="Submit Form" class="form-control btn btn-primary" />
+            </div>
+          </form>
+          <ul ng-repeat="entry in entries">
+            <li>name: {{entry.name}} email: {{entry.email}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="formApp.js"></script>
+  </body>
+</html>
